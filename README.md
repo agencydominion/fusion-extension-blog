@@ -1,6 +1,6 @@
 # Fusion Extension : Blog
 
-## Extend Fusion with a Blog Element.
+### Extend Fusion with a Blog Element.
 
 The Blog element displays a roll of all posts created on the site anywhere you place it. You can customize what gets displayed on the roll for each post; mix-and-match displaying one or all or a few of the following: Featured Image, Excerpt, Author, Date, Categories, and Tags.
 
