@@ -42,7 +42,7 @@ function fsn_init_blog() {
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<?php if (has_post_thumbnail() && !empty($show_featured_image)) {
-					$attachment_id = get_post_thumbnail_id($post->ID);
+					$attachment_id = get_post_thumbnail_id();
 					echo '<a href="'. get_permalink() .'" class="blogroll-post-image">'. fsn_get_dynamic_image($attachment_id, 'img-responsive', $featured_image_size, 'mobile') .'</a>';
 				} ?>
 				<h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
