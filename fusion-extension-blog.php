@@ -40,7 +40,10 @@ class FusionExtensionBlog	{
 	 */
 	 
 	 public function front_enqueue_scripts_styles() {
-		wp_enqueue_style( 'fsn_blog', plugin_dir_url( __FILE__ ) . 'includes/css/fusion-extension-blog.css', false, '1.0.0' );
+		global $post;
+		if (has_shortcode($post->post_content, 'fsn_blog')) {
+			wp_enqueue_style( 'fsn_blog', plugin_dir_url( __FILE__ ) . 'includes/css/fusion-extension-blog.css', false, '1.0.0' );
+		}
 	}
 	
 }
