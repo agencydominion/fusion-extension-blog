@@ -6,6 +6,6 @@ The Blog element displays a roll of all posts created on the site anywhere you p
 
 The element is pagination-ready and outputs the number of posts-per-page set on WordPress' Settings->Reading page.
 
-[Learn more about the Blog Extension in the Fusion User Guide](https://agencydominion.zendesk.com/hc/en-us/articles/220113668-Blog)
+[Learn more about the Blog Extension in the Fusion User Guide](http://agencydominion.helpscoutdocs.com/article/52-blog)
 
 **Requires the core [Fusion](https://wordpress.org/plugins/fusion/) plugin.**
