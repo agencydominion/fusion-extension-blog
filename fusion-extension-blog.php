@@ -6,7 +6,7 @@
  * Plugin Name: Fusion : Extension - Blog
  * Plugin URI: http://www.agencydominion.com/fusion/
  * Description: Blog Extension Package for Fusion.
- * Version: 1.1.2
+ * Version: 1.1.3
  * Author: Agency Dominion
  * Author URI: http://agencydominion.com
  * Text Domain: fusion-extension-blog
@@ -28,9 +28,6 @@ class FusionExtensionBlog	{
 						
 		// Initialize the language files
 		add_action('plugins_loaded', array($this, 'load_textdomain'));
-		
-		// Initialize the language files
-		load_plugin_textdomain( 'fusion-extension-blog', false, plugin_dir_url( __FILE__ ) . 'languages' );
 		
 		// Enqueue front end scripts and styles
 		add_action('wp_enqueue_scripts', array($this, 'front_enqueue_scripts_styles'));
